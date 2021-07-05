@@ -4,22 +4,21 @@ import store from '../redux/store'
 // fetchMoviesFailure, fetchMoviesLoading
 import {useEffect} from 'react';
 import moviesRequest from '../redux/thunkFunction';
-import { moviesGetter } from '../redux/getters'
 import { connect } from 'react-redux';
 
-const MovieList = props => {
+const MovieList = ({ moviesList }) => {
     console.log(store.getState())
     useEffect(() => {
         moviesRequest();
     });
     return (
         <div>
-            <h1>{}</h1>
+              <h1>{moviesList}</h1>
         </div>
     )
 }
 
-const mapStateToProps = state => ({ list: moviesGetter(state.movies) });
+const mapStateToProps = state => ({ moviesList: state.movies.movies.join() });
 
 export default connect( mapStateToProps )(MovieList);
 
