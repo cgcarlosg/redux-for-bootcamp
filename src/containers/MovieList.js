@@ -6,11 +6,14 @@ import moviesRequest from '../redux/thunkFunction';
 import { connect } from 'react-redux';
 import {getterMoviesWithInfo} from "../redux/getters";
 
-
 const MovieList = ({ moviesList }) => {
     console.log(store.getState())
+    let mounthFirst = true;
     useEffect(() => {
-        moviesRequest();
+          if (mounthFirst) {
+            moviesRequest();
+            mounthFirst = false;
+        }
     });
     return (
         <div>
@@ -18,9 +21,7 @@ const MovieList = ({ moviesList }) => {
         </div>
     )
 }
-
 const mapStateToProps = state => ({ moviesList: getterMoviesWithInfo(state).join()});
 // MovieList.propTypes = {
-
 // }
 export default connect( mapStateToProps )( MovieList );
