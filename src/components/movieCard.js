@@ -5,9 +5,11 @@ const MovieCard = props => {
     const {id, title, genre, imgUrl } = props.movie;
     return (
         <>
+        <Link to={`/movie/${id}`}>
             <h1 key={id}>{title}</h1>
             <h6>{genre}</h6>
             <img src={imgUrl}></img>
+        </Link>
         </> 
     )
 }
