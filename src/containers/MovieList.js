@@ -1,10 +1,11 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import store from '../redux/store'
-// fetchMoviesFailure, fetchMoviesLoading
-import {useEffect} from 'react';
+import store from '../redux/store';
+import { useEffect } from 'react';
 import moviesRequest from '../redux/thunkFunction';
 import { connect } from 'react-redux';
+import {getterMoviesWithInfo} from "../redux/getters";
+
 
 const MovieList = ({ moviesList }) => {
     console.log(store.getState())
@@ -13,15 +14,13 @@ const MovieList = ({ moviesList }) => {
     });
     return (
         <div>
-              <h1>{moviesList}</h1>
+            <h1>{moviesList}</h1>
         </div>
     )
 }
 
-const mapStateToProps = state => ({ moviesList: state.movies.movies.join() });
-
-export default connect( mapStateToProps )(MovieList);
-
+const mapStateToProps = state => ({ moviesList: getterMoviesWithInfo(state).join()});
 // MovieList.propTypes = {
 
 // }
+export default connect( mapStateToProps )( MovieList );
