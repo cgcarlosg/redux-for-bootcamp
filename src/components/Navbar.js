@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/images/watchFlixLogo.png'
 import { Link } from 'react-router-dom'
-import Styles from '../assets/stylesheets/Navbar.module.css'
+import Styles from '../assets/stylesheet/Navbar.module.css'
 
 const Navbar = () => {
     return (

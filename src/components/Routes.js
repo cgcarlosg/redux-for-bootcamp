@@ -7,13 +7,15 @@ import {
 import MovieList from '../containers/MovieList'
 import MoviePage from '../containers/MoviePage';
 import Navbar from './Navbar';
-import React from 'react'
+import React from 'react';
+import MainPost from './MainPost'
 
 const Routes = () => {
     return (
         <div>
             <Router>
             <Navbar />
+            <MainPost />
                 <div data-testid="page-content">
                     <Switch>
                         <Route exact path="/">
