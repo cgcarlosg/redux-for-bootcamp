@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Styles from '../assets/stylesheets/MovieCard.module.css'
+import Styles from '../assets/stylesheet/MovieCard.module.css'
 // import PropTypes from 'prop-types'
 
 const MovieCard = props => {

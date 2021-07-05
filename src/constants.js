@@ -29,4 +29,5 @@ export const genresMap = {
     37: "Western"
 }
 
-export const imgBaseUrl = "https://image.tmdb.org/t/p/w500/" 
+export const imgBaseUrl = "https://image.tmdb.org/t/p/w500/"
+export const imgPost = "https://image.tmdb.org/t/p/w1280" 

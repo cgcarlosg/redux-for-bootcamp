@@ -8,7 +8,7 @@ import {getMoviesByFilter} from "../redux/getters";
 import MovieCard from '../components/movieCard';
 import GenreFilter from '../components/GenreFilter';
 import { changeFilter } from '../redux/reducers/actionTypes'
-import Styles from '../assets/stylesheets/MovieList.module.css'
+import Styles from '../assets/stylesheet/MovieList.module.css'
 import MainPost from '../components/MainPost'
 
 
