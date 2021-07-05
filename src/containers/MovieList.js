@@ -5,9 +5,9 @@ import { useEffect } from 'react';
 import { moviesRequest} from '../redux/thunkFunction';
 import { connect } from 'react-redux';
 import {getMoviesByFilter} from "../redux/getters";
-import MovieCard from '../components/MovieCard';
-import GenreFilter from '../components/GenreFilter'
-import { changeFilter } from '../redux/actionTypes'
+import MovieCard from '../components/movieCard';
+import GenreFilter from '../components/GenreFilter';
+import { changeFilter } from '../redux/reducers/actionTypes'
 
 
 const MovieList = ({ moviesList, changeFilter }) => {
