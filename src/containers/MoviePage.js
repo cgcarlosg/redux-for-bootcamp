@@ -15,7 +15,7 @@ const MoviePage = ({ movie }) => {
 
     return (
         <div>
-              {movie ? <h1>{movie.original_title}</h1> : <h1>{'Movie Not Found'}</h1>}
+            {movie ? <h1>{movie.title}</h1> : <h1>{'Movie Not Found'}</h1>}
         </div>
     )
 }
