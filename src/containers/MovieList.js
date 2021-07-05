@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import moviesRequest from '../redux/thunkFunction';
 import { connect } from 'react-redux';
 import {getterMoviesWithInfo} from "../redux/getters";
+import MovieCard from '../components/MovieCard';
+
 const MovieList = ({ moviesList }) => {
     console.log(store.getState())
     let mounthFirst = true;
@@ -18,12 +20,8 @@ const MovieList = ({ moviesList }) => {
         <div>
             {moviesList && moviesList.length
           ? moviesList.map(movie => (
-              <>
-              <h1 key={movie.id}>{movie.title}</h1>
-              <h6>{movie.genre}</h6>
-              <img src={movie.imgUrl}></img>
-              </>
-
+             
+            <MovieCard movie={movie} key={movie.id}></MovieCard>
           ))
           : (<h1>No movies yet! :(</h1>)}
         </div>

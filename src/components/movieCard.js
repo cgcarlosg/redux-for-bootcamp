@@ -1,15 +1,19 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-const movieCard = props => {
 
+const MovieCard = props => {
+    const {id, title, genre, imgUrl } = props.movie;
     return (
-        <div>
-
-        </div>
+        <>
+            <h1 key={id}>{title}</h1>
+            <h6>{genre}</h6>
+            <img src={imgUrl}></img>
+        </> 
     )
 }
-// movieItem.propTypes = {
+
+// MovieItem.propTypes = {
 
 // }
 
-export default movieCard;
+export default MovieCard;
