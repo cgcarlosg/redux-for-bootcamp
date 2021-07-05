@@ -21,5 +21,7 @@ export const genresMap = {
     10770: "TV Movie",
     53: "Thriller",
     10752: "War",
-    37: "Western",
-} 
+    37: "Western"
+}
+
+export const imgBaseUrl = "https://image.tmdb.org/t/p/w500/" 
