@@ -4,7 +4,7 @@ import store from '../redux/store';
 import { useEffect } from 'react';
 import moviesRequest from '../redux/thunkFunction';
 import { connect } from 'react-redux';
-import {getterMoviesWithInfo} from "../redux/getters";
+import {getMoviesByFilter} from "../redux/getters";
 import MovieCard from '../components/MovieCard';
 import GenreFilter from '../components/GenreFilter'
 import { changeFilter } from '../redux/actionTypes'
@@ -30,6 +30,6 @@ const MovieList = ({ moviesList, changeFilter }) => {
         </div>
     )
 }
-const mapStateToProps = state => ({ moviesList: getterMoviesWithInfo(state)});
+const mapStateToProps = state => ({ moviesList: getMoviesByFilter(state)});
 // MovieList.propTypes = {
 export default connect( mapStateToProps, { changeFilter } )( MovieList ); 
