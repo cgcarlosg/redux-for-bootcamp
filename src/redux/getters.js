@@ -1,34 +1,21 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
-import store from '../redux/store';
-import { useEffect } from 'react';
-import moviesRequest from '../redux/thunkFunction';
-import { connect } from 'react-redux';
-import {getterMoviesWithInfo} from "../redux/getters";
+import { genresMap } from '../constants'
 
-const MovieList = ({ moviesList }) => {
-    console.log(store.getState())
-    let mounthFirst = true;
-    useEffect(() => {
-        if (mounthFirst) {
-            moviesRequest();
-            mounthFirst = false;
-        }
-    }, []);
-    return (
-        <div>
-          {moviesList && moviesList.length
-          ? moviesList.map(movie => (
-              <h1 key={movie.id}>{movie.title}</h1>
-
-          ))
-          : (<h1>No movies yet! :(</h1>)}
-        </div>
-    )
+const getterMoviesWithInfo = state => {
+    const movies = state.movies.movies;
+    const moviesWithUsefulAttributes = movies.map(movie => mappingMovies(movie));
+    return moviesWithUsefulAttributes;
 }
 
-const mapStateToProps = state => ({ moviesList: getterMoviesWithInfo(state)});
-// MovieList.propTypes = {
+const setGenreById = id => ( genresMap[id]);
 
-// }
-export default connect( mapStateToProps )( MovieList );
+const mappingMovies = movie => {
+    return {
+        title: movie.title,
+        id: movie.id,
+        genre: setGenreById(movie.genre_ids[0]),
+    }
+}
+
+
+
+export {getterMoviesWithInfo};
