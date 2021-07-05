@@ -9,7 +9,7 @@ const MovieCard = props => {
         <>
          <Link key={id} to={`/movie/${id}`}>
                 <div className={Styles.card}>
-                    <img src={imgUrl}></img>
+                <img src={imgUrl} alt={"Movie Post"}></img>
                     <button className={Styles.title} >{title}</button>
                     <button type="button" className={Styles.genre} >{genre}</button>
                 </div>

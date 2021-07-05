@@ -22,11 +22,14 @@ const MovieList = ({ moviesList, changeFilter }) => {
     return (
         <div>
             <GenreFilter changeFilter={changeFilter}></GenreFilter>
-            {moviesList && moviesList.length
-          ? moviesList.map(movie => (
-            <MovieCard movie={movie} key={movie.id}></MovieCard>
-          ))
-          : (<h1>No books yet! :(</h1>)}
+            <div className={Styles.displayList}>
+                {moviesList && moviesList.length
+            ? moviesList.map(movie => (
+                <MovieCard movie={movie} key={movie.id}></MovieCard>
+            ))
+            : (<h1>No books yet! :(</h1>)}
+          </div>
+
         </div>
     )
 }
