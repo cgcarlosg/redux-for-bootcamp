@@ -4,7 +4,7 @@ import store from '../redux/store';
 const getMoviesByFilter = state => {
     const filter = state.filter;
     let movies = mapMovieInfo(state.movies)
-    if (filter != "All") {
+    if (filter !== "All") {
         console.log('I am filtering')
         movies = movies.filter( movie => {
             return movie.genre == filter;

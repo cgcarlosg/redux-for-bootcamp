@@ -4,7 +4,7 @@ import {
 import { useEffect } from 'react';
 import { singleMovieRequest } from '../redux/thunkFunction';
 import { connect } from 'react-redux';
-
+import MovieInfo from '../components/MovieInfo'
 const MoviePage = ({ movie }) => {
     const { id } = useParams();
 
@@ -15,7 +15,7 @@ const MoviePage = ({ movie }) => {
 
     return (
         <div>
-            {movie ? <h1>{movie.title}</h1> : <h1>{'Movie Not Found'}</h1>}
+             {movie ? <MovieInfo movie={movie} /> :<h1>{'Movie Not Found'}</h1>}
         </div>
     )
 }

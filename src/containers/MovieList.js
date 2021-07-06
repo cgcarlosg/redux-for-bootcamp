@@ -24,6 +24,7 @@ const MovieList = ({ moviesList, changeFilter }) => {
     return (
         <div>
             <MainPost />
+            <h1 className={Styles.title}> TOP RATED MOVIES </h1>
             <GenreFilter changeFilter={changeFilter}></GenreFilter>
             <div className={Styles.displayList}>
                 {moviesList && moviesList.length

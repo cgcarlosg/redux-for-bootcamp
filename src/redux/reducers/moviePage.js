@@ -1,5 +1,5 @@
 import { SET_MOVIE_LOADING, SET_MOVIE_SUCCESS, SET_MOVIE_FAILURE } from '../../constants';
-import { SetMovieFailure } from '../reducers/actionTypes';
+
 
 const initialState = {
     movie: null,

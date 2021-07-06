@@ -1,6 +1,6 @@
 import React from "react";
 import { imgPost } from "../constants";
-import Styles from "../assets/stylesheets/MovieInfo.module.css";
+import Styles from "../assets/stylesheet/MovieInfo.module.css";
 import stars from "../assets/images/stars.svg"
 
 const MovieInfo = ({ movie }) => {
