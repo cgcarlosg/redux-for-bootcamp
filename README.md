@@ -7,7 +7,7 @@ You can filter the movies by category.
 You can also click on the movie to check more details, such as a description, the average rate received, and tagline, when available.
 
 
-![Main Banner](./public/main.jpg)
+![Main Banner](./src/assets/images/main.jpg)
 
 
 ## Development
