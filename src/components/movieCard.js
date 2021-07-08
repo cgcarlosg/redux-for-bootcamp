@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Styles from '../assets/stylesheet/MovieCard.module.css'
-// import PropTypes from 'prop-types'
 
 const MovieCard = props => {
     const {id, title, genre, imgUrl } = props.movie;
@@ -18,8 +17,5 @@ const MovieCard = props => {
     )
 }
 
-// MovieItem.propTypes = {
-
-// }
 
 export default MovieCard;

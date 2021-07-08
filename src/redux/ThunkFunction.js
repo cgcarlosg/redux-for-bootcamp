@@ -1,5 +1,5 @@
 import store from './store'
-import {fetchMoviesFailure, fetchMoviesLoading, fetchMoviesSuccess, setMovieSuccess, setMovieFailure, setMovieLoading} from './reducers/actionTypes';
+import {fetchMoviesFailure, fetchMoviesLoading, fetchMoviesSuccess, setMovieSuccess} from './reducers/actionTypes';
 import { getMovies, getSingleMovie } from '../api/requests'
 
 

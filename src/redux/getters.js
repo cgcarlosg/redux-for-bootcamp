@@ -7,7 +7,7 @@ const getMoviesByFilter = state => {
     if (filter !== "All") {
         console.log('I am filtering')
         movies = movies.filter( movie => {
-            return movie.genre == filter;
+            return movie.genre === filter;
         })
     }
     return movies

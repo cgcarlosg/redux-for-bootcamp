@@ -5,11 +5,11 @@ import Styles from '../assets/stylesheet/Navbar.module.css'
 
 const Navbar = () => {
     return (
-        <div className={Styles.navbar}>
+        <navbar className={Styles.navbar}>
             <Link to={"/"}>            
                     <div className={Styles.navItems}>
-                    <img className={Styles.logo} src={logo} alt='Logo'></img>
-                    <h2> WATCHFLIX </h2>
+                    <img className={Styles.logo} src={logo} alt='Main Logo'></img>
+                    <h2> MOVIE-FLIX </h2>
                 </div>
             </Link>
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <a target={"_blank"} href={"https://www.behance.net/gallery/97859577/X-MOVIES?tracking_source=search_projects_recommended%7Cmovies"}>Design</a>
                 <a target={"_blank"} href={"https://github.com/cgcarlosg/redux-for-bootcamp"}>Development</a>
             </div>  
-            </div>
+        </navbar>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+
 import store from '../redux/store';
 import { useEffect } from 'react';
 import { moviesRequest} from '../redux/thunkFunction';
@@ -26,17 +26,17 @@ const MovieList = ({ moviesList, changeFilter }) => {
             <MainPost />
             <h1 className={Styles.title}> TOP RATED MOVIES </h1>
             <GenreFilter changeFilter={changeFilter}></GenreFilter>
-            <div className={Styles.displayList}>
+            <main className={Styles.displayList}>
                 {moviesList && moviesList.length
             ? moviesList.map(movie => (
                 <MovieCard movie={movie} key={movie.id}></MovieCard>
             ))
-            : (<h1>No books yet! :(</h1>)}
-          </div>
+            : (<h1>No movies yet! :(</h1>)}
+          </main>
 
         </div>
     )
 }
 const mapStateToProps = state => ({ moviesList: getMoviesByFilter(state)});
-// MovieList.propTypes = {
+
 export default connect( mapStateToProps, { changeFilter } )( MovieList ); 
