@@ -27,6 +27,6 @@ const movies = (state = moviesInitialState, action) => {
             }
         default: return state;
     }
-}
+};
 
 export default movies; 

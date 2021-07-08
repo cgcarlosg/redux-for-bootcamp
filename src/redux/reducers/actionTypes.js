@@ -41,6 +41,6 @@ const setMovieSuccess = movie => {
         type: SET_MOVIE_SUCCESS,
         payload: movie
     }
-}
+};
 
 export {fetchMoviesFailure, fetchMoviesLoading, fetchMoviesSuccess, changeFilter, setMovieLoading, setMovieSuccess, setMovieFailure}; 

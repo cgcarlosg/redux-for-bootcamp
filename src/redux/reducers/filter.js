@@ -9,6 +9,6 @@ const filter = (state = filterInitialState, action) => {
         default:
             return state;
     }
-}
+};
 
 export default filter;

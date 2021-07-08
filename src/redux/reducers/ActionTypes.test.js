@@ -5,7 +5,6 @@ import {
     changeFilter,
     setMovieLoading,
     setMovieSuccess,
-    setMovieFailure,
   } from './actionTypes';
 
   const exampleMovies = [{ title: 'movie1' }, { title: 'movie1' }, { title: 'movie1' }];

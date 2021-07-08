@@ -5,7 +5,7 @@ const getMoviesByFilter = state => {
     const filter = state.filter;
     let movies = mapMovieInfo(state.movies)
     if (filter !== "All") {
-        console.log('I am filtering')
+   
         movies = movies.filter( movie => {
             return movie.genre === filter;
         })
@@ -29,7 +29,7 @@ const mappingMovies = movie => {
 
 const getMovieById = id => {
     const movie = store.getState().movies.movies
-    console.log(movie)
+ 
     return movie;
 }
 

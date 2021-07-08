@@ -2,7 +2,7 @@ import React from 'react'
 
 import store from '../redux/store';
 import { useEffect } from 'react';
-import { moviesRequest} from '../redux/ThunkFunction';
+import { moviesRequest} from '../redux/thunkFunction';
 import { connect } from 'react-redux';
 import {getMoviesByFilter} from "../redux/getters";
 import MovieCard from '../components/movieCard';
@@ -13,7 +13,7 @@ import MainPost from '../components/MainPost'
 
 
 const MovieList = ({ moviesList, changeFilter }) => {
-    console.log(store.getState())
+
     let mounthFirst = true;
     useEffect(() => {
         if (mounthFirst) {
