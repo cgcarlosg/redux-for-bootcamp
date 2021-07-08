@@ -14,11 +14,11 @@ You can also click on the movie to check more details, such as a description, th
 
 The development of this project followed all the requirements listed:
 
-    - The app fetches data from an external API
-    - The data is retrieved in the Redux Store
-    - The app has Unit Tests implemented
-    - The test coverage is higher than 60%
-    - The app Navigates
+    * The app fetches data from an external API
+    * The data is retrieved in the Redux Store
+    * The app has Unit Tests implemented
+    * The test coverage is higher than 60%
+    * The app Navigates
 
 Built With:
 
