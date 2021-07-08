@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders MovieInfo 1`] = `
+<div>
+  <h1
+    className="title"
+  >
+    Dilwale Dulhania Le Jayenge
+  </h1>
+  <div
+    className="poster"
+    style={
+      Object {
+        "backgroundImage": "url(https://image.tmdb.org/t/p/w1280undefined)",
+      }
+    }
+  />
+  <div
+    className="info"
+  >
+    <div
+      className="text"
+    >
+      <h2>
+         Description 
+      </h2>
+      <p>
+        Raj is a rich
+      </p>
+      <p />
+    </div>
+    <div
+      className="rates"
+    >
+      <img
+        alt="Star"
+        className="star"
+        src="stars.svg"
+      />
+      <h1>
+        8.7
+      </h1>
+    </div>
+  </div>
+</div>
+`;
