@@ -7,7 +7,7 @@ You can filter the movies by category.
 You can also click on the movie to check more details, such as a description, the average rate received, and tagline, when available.
 
 
-This project was bootstrapped with [Main Banner]('./images/main').
+This project was bootstrapped with [Main Banner]('https://github.com/cgcarlosg/redux-for-bootcamp/blob/development/src/assets/images/main.jpg').
 
 
 ## Development
