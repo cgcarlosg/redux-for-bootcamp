@@ -22,11 +22,11 @@ The development of this project followed all the requirements listed:
 
 Built With:
 
-Javascript
-React
-Redux
-React-Redux
-NPM
+   * Javascript
+   * React
+   * Redux
+   * React-Redux
+   * NPM
 
 ## Author
 
