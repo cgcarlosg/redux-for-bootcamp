@@ -9,7 +9,7 @@ const Navbar = () => {
             <Link to={"/"}>            
                     <div className={Styles.navItems}>
                     <img className={Styles.logo} src={logo} alt='Logo'></img>
-                    <h2> WATCHFLIX </h2>
+                    <h2> WATCH-MOVIE-FLIX </h2>
                 </div>
             </Link>
 
