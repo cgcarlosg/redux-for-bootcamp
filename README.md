@@ -19,6 +19,7 @@ The development of this project followed all the requirements listed:
     * The app has Unit Tests implemented
     * The test coverage is higher than 60%
     * The app Navigates
+    * The app is Web Responsive
 
 Built With:
 
