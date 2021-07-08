@@ -30,6 +30,7 @@ const mappingMovies = movie => {
 const getMovieById = id => {
     const movie = store.getState().movies.movies
  
+    
     return movie;
 }
 
