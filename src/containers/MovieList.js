@@ -2,7 +2,7 @@ import React from 'react'
 
 import store from '../redux/store';
 import { useEffect } from 'react';
-import { moviesRequest} from '../redux/thunkFunction';
+import { moviesRequest} from '../redux/ThunkFunction';
 import { connect } from 'react-redux';
 import {getMoviesByFilter} from "../redux/getters";
 import MovieCard from '../components/movieCard';

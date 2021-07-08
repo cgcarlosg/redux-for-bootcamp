@@ -2,7 +2,7 @@ import {
     useParams,
   } from "react-router-dom";
 import { useEffect } from 'react';
-import { singleMovieRequest } from '../redux/thunkFunction';
+import { singleMovieRequest } from '../redux/ThunkFunction';
 import { connect } from 'react-redux';
 import MovieInfo from '../components/MovieInfo'
 const MoviePage = ({ movie }) => {

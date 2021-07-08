@@ -2,8 +2,6 @@ import React from 'react'
 import { genresMap } from '../constants'
 import store from '../redux/store';
 import Styles from '../assets/stylesheet/GenreFilter.module.css';
-// import PropTypes from 'prop-types'
-
 
 const GenreFilter = ({ changeFilter }) => {
     console.log(store.getState())
@@ -25,7 +23,4 @@ const GenreFilter = ({ changeFilter }) => {
 }
 
 
-// GenreFilter.propTypes = {
-
-// }
 export default GenreFilter
